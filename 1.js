@@ -7,7 +7,8 @@
 **************************************
 
 [rewrite_local]
-^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$)
+^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$) url script-response-body https://raw.githubusercontent.com/stargazer974/ios_rule_script/master/1.js
+^http:\/\/adx\.sogaha\.cn\/sdk\/ad\/get url reject-200
 
 [mitm]
 hostname = api.revenuecat.com
