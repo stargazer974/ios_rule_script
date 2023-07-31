@@ -16,7 +16,6 @@ hostname = api.revenuecat.com
 
 
 var chxm1023 = JSON.parse($response.body);
-chxm1023 = {
   
 const lovebaby = {};
 const lovelovebabyforevey = JSON.parse(typeof $response != "undefined" && $response.body || null);
@@ -43,6 +42,5 @@ if (typeof $response == "undefined") {
 
   lovebaby.body = JSON.stringify(lovelovebabyforevey);
 }
-};
 
 $done({body : JSON.stringify(chxm1023)});
