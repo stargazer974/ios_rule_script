@@ -7,10 +7,9 @@
 **************************************
 
 [rewrite_local]
-
 ^https?:\/\/api\.revenuecat\.com\/v1\/(subscribers\/[^\/]+$|receipts$)
-[mitm]
 
+[mitm]
 hostname = api.revenuecat.com
 
 *************************************/
